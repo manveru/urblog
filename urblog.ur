@@ -7,7 +7,7 @@ open Crud.Make(struct
   val title = "Blog Admin"
 
   val cols = {Title = Crud.string "Blog Title",
-              Created = Crud.string "Created",
+              Created = Crud.time "Created",
               Author = Crud.string "Author",
               Body = Crud.string "Entry Body"}
 end)

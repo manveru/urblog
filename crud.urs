@@ -10,6 +10,7 @@ con colsMeta = fn cols :: {(Type * Type)} => $(map colMeta cols)
 val int : string -> colMeta (int, string)
 val float : string -> colMeta (float, string)
 val string : string -> colMeta (string, string)
+val time : string -> colMeta (time, string)
 val bool : string -> colMeta (bool, bool)
 
 functor Make(M : sig

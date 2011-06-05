@@ -20,6 +20,7 @@ fun default [t] (sh : show t) (rd : read t) (inj : sql_injectable t)
 val int = default
 val float = default
 val string = default
+val time = default
 
 fun bool name = {Nam = name,
                  Show = txt,
